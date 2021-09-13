@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+feh $1 &
+
+feh "LABEL_${1}" &
+ 
+done
