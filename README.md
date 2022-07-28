@@ -13,9 +13,12 @@ Link to challenge [here](https://eval.ai/web/challenges/challenge-page/1057/over
 
 
 ## Instructions
-`
+```
 cd /app/mod_reco/deeplab2
-python3 trainer/train.py --config_file="/app/mod_reco/deeplab2/configs/Wireless/resnet50_os32_semseg.textproto" --mode=train --model_dir="/app/data/Modulation_recognition/models/" --num_gpus=2 >> /app/data/Modulation_recognition/log006.log `
+python3 trainer/train.py --config_file="/app/mod_reco/deeplab2/configs/Wireless/resnet50_os32_semseg.textproto" --mode=train --model_dir="/app/data/Modulation_recognition/models/" --num_gpus=2 >> /app/data/Modulation_recognition/log006.log 
+```
 
-`%cd /app/mod_reco/deeplab2
-!python3 trainer/train.py --config_file="/app/mod_reco/deeplab2/configs/Wireless/resnet50_os32_semseg.textproto" --mode=eval --model_dir="/app/data/Modulation_recognition/models/" --num_gpus=1 >> /app/data/Modulation_recognition/log006_eval.log`
+```
+%cd /app/mod_reco/deeplab2
+!python3 trainer/train.py --config_file="/app/mod_reco/deeplab2/configs/Wireless/resnet50_os32_semseg.textproto" --mode=eval --model_dir="/app/data/Modulation_recognition/models/" --num_gpus=1 >> /app/data/Modulation_recognition/log006_eval.log
+```
